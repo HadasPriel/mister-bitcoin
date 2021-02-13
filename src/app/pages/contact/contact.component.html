@@ -1,8 +1,0 @@
-<section class="contacts">
-    <header class="flex space-between align-center">
-        <h2>Your Contacts ({{contacts.length}})</h2>
-        <a routerLink="../edit" class="add-btn">+ Add New Contact</a>
-    </header>
-    <contact-filter (filterEv)="onFilter($event)" ></contact-filter>
-    <contact-list [contacts]="contacts"></contact-list>
-</section>
