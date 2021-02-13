@@ -1,0 +1,19 @@
+<div class="contact-details">
+    <nav class="flex space-between">
+        <button class="material-icons back-btn" routerLink="../../contact">keyboard_arrow_left</button>
+        <div class="user-nav">
+            <button class="material-icons" (click)="onRemove()">delete</button>
+            <button class="material-icons" [routerLink]="['../../edit', contact._id]">create</button>
+        </div>
+    </nav>
+    <div class="user flex align-center">
+        <img class="profile-img" src="https://robohash.org/{{contact.name}}/.png?bgset=bg1">
+        <div class="user-info">
+            <p>Name: {{contact.name}}</p>
+            <p>Phone: {{contact.phone}}</p>
+            <p>E-mail: {{contact.email}}</p>
+        </div>
+    </div>
+    <transfer-fund (moveEv)="onMove($event)" [contact]="contact" [maxCoins]="maxCoins" ></transfer-fund>
+    <move-list *ngIf="moves.length > 0" [moves]="moves" ></move-list>
+</div>

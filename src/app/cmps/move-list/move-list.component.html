@@ -1,0 +1,7 @@
+<ul class="move-list">
+    <p>movment in your account: </p>
+    <li *ngFor="let move of moves">
+        ₿ {{move.amount}} transferd to {{move.contact.name}} 
+        <span class="time">at {{move.time|date}}</span>
+    </li> 
+</ul>

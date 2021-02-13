@@ -1,0 +1,26 @@
+<!-- <form class="contact-filter" >
+    <label>Name
+        <input (keyup)="onSetFilter()" type="text" name="name" [(ngModel)]="filterBy.name" 
+        autocomplete="off" placeholder="search name" />
+    </label>
+    <label>Phone
+        <input (keyup)="onSetFilter()" type="text" name="phone" [(ngModel)]="filterBy.phone" 
+        autocomplete="off" placeholder="search phone"/>
+    </label>
+  </form> -->
+
+  <form class="contact-filter">
+    <mat-form-field class="input-filter">
+      <!-- <mat-label>Favorite food</mat-label> -->
+      <input matInput (keyup)="onSetFilter()" type="text" name="name" [(ngModel)]="filterBy.name" 
+      autocomplete="off" placeholder="search name">
+      <span matPrefix class="material-icons">search</span>
+    </mat-form-field>
+  
+    <mat-form-field class="input-filter">
+      <!-- <mat-label>Leave a comment</mat-label> -->
+      <input matInput (keyup)="onSetFilter()" type="text" name="phone" [(ngModel)]="filterBy.phone" 
+      autocomplete="off" placeholder="search phone">
+      <span matPrefix class="material-icons">search</span>
+    </mat-form-field>
+  </form>

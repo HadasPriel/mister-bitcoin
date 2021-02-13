@@ -1,0 +1,25 @@
+.contact-details {
+    nav {
+        padding: 10px 5px;
+    }
+    .user {
+        width: fit-content;
+        margin: auto;
+
+        .profile-img {
+            height: 200px;
+            width: 200px;
+            display: block;
+            margin: 0 0 30px 0;
+        }
+
+        .user-info {
+            margin-left: 50px;
+        }
+        form {
+            .example-full-width {
+                margin-right: 5px;
+            }
+        }
+    }
+}

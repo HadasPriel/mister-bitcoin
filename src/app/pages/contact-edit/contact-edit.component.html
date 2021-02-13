@@ -1,0 +1,46 @@
+
+<!-- <form class="edit-contact" (submit)="onEdit()">
+    
+    <label>Name
+        <input type="text" name="name" [(ngModel)]="contact.name" 
+        autocomplete="off" placeholder="Enter Name" />
+    </label>
+    <label>Phone
+        <input type="text" name="phone" [(ngModel)]="contact.phone" 
+        autocomplete="off" placeholder="Enter Phone"/>
+    </label>
+    <label>Phone
+        <input type="text" name="phone" [(ngModel)]="contact.email" 
+        autocomplete="off" placeholder="Enter Email"/>
+    </label>
+    <button>save</button>
+</form> -->
+
+<section class="edit-contact">
+
+<header class="flex space-between align-center">
+    <button class="material-icons back-btn" [routerLink]="['../../details', contact._id]">keyboard_arrow_left</button>
+    <button class="material-icons" (click)="onRemove()">delete</button>
+</header>
+
+
+<form (submit)="onEdit()">
+    <mat-form-field class="example-full-width">
+      <mat-label style="color: rgb(0, 0, 0, 0.7);">Name</mat-label>
+      <input matInput type="text" name="name" [(ngModel)]="contact.name" 
+      autocomplete="off" placeholder="Enter Name" >
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label style="color: rgb(0, 0, 0, 0.7);">Phone</mat-label>
+      <input matInput type="text" name="phone" [(ngModel)]="contact.phone" 
+      autocomplete="off" placeholder="Enter Phone" >
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label style="color: rgb(0, 0, 0, 0.7);">Email</mat-label>
+      <input matInput type="text" name="phone" [(ngModel)]="contact.email" 
+      autocomplete="off" placeholder="Enter Email" >
+    </mat-form-field>
+    
+    <button mat-raised-button color="primary" class="signup-btn">Save</button>
+  </form>
+</section>

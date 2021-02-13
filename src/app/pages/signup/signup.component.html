@@ -1,0 +1,11 @@
+<form class="signup">
+  <mat-form-field class="example-full-width">
+    <mat-label style="color: rgb(0, 0, 0, 0.7);">Enter Your Name</mat-label>
+    <input matInput autocomplete="off" type=text name="name" [(ngModel)]="name" >
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label style="color: rgb(0, 0, 0, 0.7);">Enter Your Bitcoin amuont</mat-label>
+    <input matInput autocomplete="off" type="number" name="bitcoin" [(ngModel)]="bitcoin" >
+  </mat-form-field>
+  <button mat-raised-button color="primary" class="signup-btn" (click)="onSignup()">Sign Up</button>
+</form>

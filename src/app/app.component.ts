@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mister-bitcoin';
+  height: number
+
+
+  ngOnInit(): void {
+    this.height = document.body.clientHeight
+
+  }
 }

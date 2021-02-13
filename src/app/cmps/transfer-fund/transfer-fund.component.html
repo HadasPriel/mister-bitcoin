@@ -1,0 +1,8 @@
+<form (submit)="onMove()">
+    <mat-form-field class="example-full-width">
+        <mat-label style="color: rgb(0, 0, 0, 0.7);">Enter Amount</mat-label>
+        <input matInput autocomplete="off" type=number name="amount" [(ngModel)]="amount" required>
+        <span matPrefix>₿&nbsp;</span>
+    </mat-form-field>
+    <button mat-raised-button color="primary" class="signup-btn">Transfer</button>
+</form>
